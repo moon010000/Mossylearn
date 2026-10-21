@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-mono: 'Space Grotesk', ui-monospace, monospace;
+    --color-brown-dark: #3B270C;
+    --color-moss: #3A5A40;
+    --color-moss-light: #4F6F52;
+    --color-olive: #A3B18A;
+    --color-gold: #D4A373;
+    --color-cream: #FAF6EE;
+    --color-surface-cream: #F8F4EA;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    letter-spacing: -0.015em;
+    background: linear-gradient(180deg, #FDFBF7 0%, #F8F4EA 50%, #EFE7D6 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
+    color: #18181b;
+  }
+}
+
+/* Elegant squircle box shadow and glass reflection */
+.squircle-card {
+  border-radius: 2.25rem;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.squircle-badge {
+  border-radius: 1.25rem;
+}
+
+/* Subtle custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(163, 177, 138, 0.35);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(59, 39, 12, 0.4);
+}
